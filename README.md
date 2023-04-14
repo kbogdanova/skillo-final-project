@@ -18,5 +18,6 @@ This repository contains the following test cases:
 | LoginTest | loginUnsuccessful | Login with invalid username or password should not be possible. |
 | PostTest | createPost | Logged in users should be able to create new posts by uploading picture and filling caption. |
 | ProfileTest | profileCorrect | Logged in users should be able open their profile page. |
+| RegisterTest | registerSuccessful | Visitors should be able to register with valid username/email/password. |
 
 Testng.xml files is located in `TrainingSkillo/src/test` directory.
