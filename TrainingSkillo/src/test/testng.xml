@@ -1,0 +1,10 @@
+<suite name="TrainingSkillo Suite" parallel="methods" thread-count="1" >
+    <test name="TrainingSkillo test" group-by-instances="true">
+        <classes>
+            <class name="LoginTest" />
+            <class name="ProfileTest" />
+            <class name="PostTest" />
+            <class name="HomeTest" />
+        </classes>
+    </test>
+</suite>
