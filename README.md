@@ -19,4 +19,4 @@ This repository contains the following test cases:
 | PostTest | createPost | Logged in users should be able to create new posts by uploading picture and filling caption. |
 | ProfileTest | profileCorrect | Logged in users should be able open their profile page. |
 
-Testng.xml files is located in TrainingSkillo/src/test directory.
+Testng.xml files is located in `TrainingSkillo/src/test` directory.

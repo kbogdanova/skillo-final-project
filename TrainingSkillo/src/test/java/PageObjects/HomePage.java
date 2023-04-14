@@ -14,6 +14,9 @@ public class HomePage extends BasePage {
     @FindBy(css = ".post-modal-container .fa-heart")
     WebElement modalHeart;
 
+    @FindBy(id = "toast-container")
+    WebElement toastContainerElement;
+
     public HomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -33,5 +36,9 @@ public class HomePage extends BasePage {
 
     public void modalLike() {
         clickElement(modalHeart);
+    }
+
+    public String getSuccessfulMessage() {
+        return getText(toastContainerElement);
     }
 }

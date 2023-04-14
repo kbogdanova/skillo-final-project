@@ -23,6 +23,9 @@ public class LoginPage extends BasePage {
     @FindBy(className = "toast-warning")
     WebElement toastWarningElement;
 
+    @FindBy(css = ".login-container form p:last-of-type a")
+    WebElement registerBtn;
+
     public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -48,5 +51,9 @@ public class LoginPage extends BasePage {
 
     public String getWarningMessage() {
         return getText(toastWarningElement);
+    }
+
+    public void clickRegisterBtn() {
+        clickElement(registerBtn);
     }
 }
